@@ -38,3 +38,6 @@ You will need an API Key which is provided for you in that same link, just fill 
 <img src="./screenshots/screen_1.png" width=300 align=left>
 <img src="./screenshots/screen_2.png" width=300 align=left>
 <img src="./screenshots/screen_3.png" width=300 align=bottom>
+
+
+-credit : <a target="_blank" href="https://icons8.com/icon/oDaX0fQmSFPe/comet">Comet</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
