@@ -38,11 +38,11 @@ You will need an API Key which is provided for you in that same link, just fill 
 
 
 <p align = "left">
-<img src="./screenshots/screen_1.png" width=300>
-<img src="./screenshots/screen_2.png" width=300>
+<img src="./screenshots/screen_1.png" width=200>
 </p>
 <p align = "left">
-  <img src="./screenshots/screen_3.png" width=300>
+<img src="./screenshots/screen_2.png" width=200>
+  <img src="./screenshots/screen_3.png" width=200>
 </p>
 
 
