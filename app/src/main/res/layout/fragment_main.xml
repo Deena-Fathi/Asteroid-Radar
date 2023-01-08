@@ -31,7 +31,8 @@
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/placeholder_picture_of_day"
                 app:pictureOfDay="@{viewModel.pictureOfDay}"
-                app:status="@{viewModel.status}"/>
+                app:status="@{viewModel.status}"
+                app:pictureOfDayDescription = "@{viewModel.pictureOfDay}"/>
 
             <TextView
                 android:id="@+id/textView"

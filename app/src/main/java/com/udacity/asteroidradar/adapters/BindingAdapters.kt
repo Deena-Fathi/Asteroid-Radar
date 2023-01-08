@@ -23,12 +23,27 @@ fun bindAsteroidStatusImage(imageView: ImageView, isHazardous: Boolean) {
 
 @BindingAdapter("asteroidStatusImage")
 fun bindDetailsStatusImage(imageView: ImageView, isHazardous: Boolean) {
+    val context = imageView.context
     if (isHazardous) {
         imageView.setImageResource(R.drawable.asteroid_hazardous)
     } else {
         imageView.setImageResource(R.drawable.asteroid_safe)
     }
+    imageView.contentDescription = if (isHazardous)
+        context.getString(R.string.potentially_hazardous_asteroid_image)
+    else
+        context.getString(R.string.not_hazardous_asteroid_image)
 }
+
+@BindingAdapter("pictureOfDayDescription")
+fun bindPictureOfDayDescription(imageView: ImageView, PicOfDay: PictureOfDay?){
+    val context = imageView.context
+    imageView.contentDescription = when (PicOfDay) {
+        null -> context.getString(R.string.this_is_nasa_s_picture_of_day_showing_nothing_yet)
+        else -> context.getString(R.string.nasa_picture_of_day_content_description_format, PicOfDay.title)
+    }
+}
+
 
 @BindingAdapter("astronomicalUnitText")
 fun bindTextViewToAstronomicalUnit(textView: TextView, number: Double) {
