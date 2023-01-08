@@ -33,11 +33,18 @@ https://api.nasa.gov/
 
 You will need an API Key which is provided for you in that same link, just fill the fields in the form and click Signup.
 
-### Screenshots
 
-<img src="./screenshots/screen_1.png" width=300 align=left>
-<img src="./screenshots/screen_2.png" width=300 align=left>
-<img src="./screenshots/screen_3.png" width=300 align=bottom>
+### Perview
+
+
+<p align = "left">
+<img src="./screenshots/screen_1.png" width=300>
+<img src="./screenshots/screen_2.png" width=300>
+</p>
+<p align = "left">
+  <img src="./screenshots/screen_3.png" width=300>
+</p>
+
 
 
 -credit : <a target="_blank" href="https://icons8.com/icon/oDaX0fQmSFPe/comet">Comet</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
