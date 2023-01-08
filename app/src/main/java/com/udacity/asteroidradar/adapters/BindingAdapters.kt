@@ -14,11 +14,16 @@ import com.udacity.asteroidradar.main.MainViewModel
 
 @BindingAdapter("statusIcon")
 fun bindAsteroidStatusImage(imageView: ImageView, isHazardous: Boolean) {
+    val context = imageView.context
     if (isHazardous) {
         imageView.setImageResource(R.drawable.ic_status_potentially_hazardous)
     } else {
         imageView.setImageResource(R.drawable.ic_status_normal)
     }
+    imageView.contentDescription = if (isHazardous)
+        context.getString(R.string.potentially_hazardous_asteroid)
+    else
+        context.getString(R.string.not_hazardous_asteroid)
 }
 
 @BindingAdapter("asteroidStatusImage")
@@ -36,11 +41,14 @@ fun bindDetailsStatusImage(imageView: ImageView, isHazardous: Boolean) {
 }
 
 @BindingAdapter("pictureOfDayDescription")
-fun bindPictureOfDayDescription(imageView: ImageView, PicOfDay: PictureOfDay?){
+fun bindPictureOfDayDescription(imageView: ImageView, PicOfDay: PictureOfDay?) {
     val context = imageView.context
     imageView.contentDescription = when (PicOfDay) {
         null -> context.getString(R.string.this_is_nasa_s_picture_of_day_showing_nothing_yet)
-        else -> context.getString(R.string.nasa_picture_of_day_content_description_format, PicOfDay.title)
+        else -> context.getString(
+            R.string.nasa_picture_of_day_content_description_format,
+            PicOfDay.title
+        )
     }
 }
 
